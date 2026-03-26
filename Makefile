@@ -70,11 +70,11 @@ directories:
 
 # remove directory for intermediate products
 clean:
-	@$(RM) -rf $(BUILDDIR)
+	@$(RM) -rf obj
 
 # remove directories for both intermediate and final products
 cleaner: clean
-	@$(RM) -rf $(TARGETDIR)
+	@$(RM) -rf $(TARGETDIR) $(OUTPUTDIR)
 
 -include $(dependencies)
 
