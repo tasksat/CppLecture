@@ -3,10 +3,10 @@
 make_unit() {
   num=$1
   unit="Unit$num"
-  if [ ! -d "$unit" ]; then
-    mkdir -p "$unit"
+  if [ ! -d "src/$unit" ]; then
+    mkdir -p "src/$unit"
   fi
-  file="$unit/main.cpp"
+  file="src/$unit/main.cpp"
   if [ ! -e "$file" ]; then
     touch "$file"
   fi
