@@ -2,7 +2,7 @@
 
 make_unit() {
   num=$1
-  unit="Unit$num"
+  unit="Unit$(printf "%02d" "$num")"
   if [ ! -d "src/$unit" ]; then
     mkdir -p "src/$unit"
   fi

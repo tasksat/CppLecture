@@ -4,7 +4,7 @@ CXX					?= Auto
 
 BUILD_TYPE			?= Debug
 
-PROJECT				?= Unit1
+PROJECT				?= Unit01
 
 TARGET				:= main_$(PROJECT)
 SRCDIR				:= src/$(PROJECT)
